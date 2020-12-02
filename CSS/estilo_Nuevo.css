@@ -1,0 +1,223 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+html {
+  scroll-behavior: smooth; }
+
+.jumbotron {
+  background-image: linear-gradient(black, #4d4d4d);
+  position: sticky; }
+
+.colorFooter {
+  color: white; }
+
+h2 {
+  text-align: center; }
+
+.textoAlineado {
+  text-align: center; }
+
+/* Funcion para Hoover-zoom de imagenes*/
+.zoom {
+  width: 14vh;
+  height: 14vh;
+  overflow: hidden;
+  margin: 0 auto; }
+
+.zoom Img {
+  width: 100%;
+  transition: 0.5s all ease-in-out; }
+
+.zoom:hover Img {
+  transform: scale(1.5); }
+
+.body {
+  background-image: url(https://a.mktgcdn.com/p/Tw2IeHpoCZWWtAMVlzIa-wFbPyNztbpM7Jp20DpOa0o/400x400.png);
+  background-color: whitesmoke;
+  margin: 0%;
+  padding: 0;
+  height: 100%;
+  width: 100%; }
+
+/*Clases para el Header, incluyendo transiciones, adaptacion react del header, y el menú desplegable nuevo (solo se puede usar la función del botón animado en mobile)*/
+.headerFijo {
+  position: sticky;
+  height: 80px;
+  width: 100%;
+  background: #1f1f1f;
+  top: 0;
+  z-index: 10; }
+
+.nav {
+  display: flex;
+  height: 80px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap; }
+
+.nav .logo {
+  color: #fff;
+  font-size: 45px;
+  font-weight: 600;
+  font-family: 'Pacifico', cursive; }
+
+@media (max-width: 1090px) {
+  .nav .logo {
+    font-size: 30px; } }
+
+.nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none; }
+  .nav ul li {
+    margin: 0 5px; }
+    .nav ul li a {
+      color: #f2f2f2;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 8px 15px;
+      border-radius: 5px;
+      letter-spacing: 1px;
+      transition: all 0.3s ease; }
+
+.nav ul li a.active,
+.nav ul li a:hover {
+  color: #008d8d;
+  background: #fff; }
+
+.submenu {
+  position: absolute;
+  flex-direction: column;
+  display: flex;
+  background-color: #9b0000;
+  left: 60%;
+  top: 30px;
+  padding-top: 30px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  padding-left: 0;
+  border: 0;
+  margin: 0; }
+  .submenu li {
+    padding-top: 10px;
+    padding-bottom: 16px; }
+
+.nav .menu-btn i {
+  color: #fff;
+  font-size: 22px;
+  display: none; }
+
+input[type="checkbox"] {
+  display: none; }
+
+@media (max-width: 1000px) {
+  .nav {
+    padding: 0 40px 0 50px; } }
+
+@media (max-width: 920px) {
+  .nav .menu-btn i {
+    display: block; }
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d"; }
+  .nav ul {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+    z-index: 10; }
+    .nav ul li {
+      width: 100%;
+      margin: 40px 0; }
+      .nav ul li a {
+        width: 100%;
+        margin-left: -100%;
+        display: block;
+        font-size: 20px;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+  #click:checked ~ ul {
+    left: 0; }
+  #click:checked ~ ul li a {
+    margin-left: 0px; }
+  .nav ul li a.active,
+  .nav ul li a:hover {
+    background: none;
+    color: cyan; } }
+
+/*Sector de la página dedícado a la primera pantalla del home (titulo, subtitulo, parrafo)*/
+#S0 .container {
+  height: 100%; }
+  #S0 .container .contenedorBackground {
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    left: 0;
+    width: 100%; }
+  #S0 .container .titulo {
+    font-size: 10vw;
+    font-weight: 6000;
+    font-family: 'Roboto', bold;
+    font-style: oblique;
+    color: white;
+    text-align: center;
+    padding-top: 20%; }
+    #S0 .container .titulo h1 {
+      font-size: 6vw; }
+    #S0 .container .titulo h2 {
+      padding-top: 2%;
+      font-size: 3vw;
+      padding-bottom: 20%; }
+    #S0 .container .titulo p {
+      font-size: 4vw;
+      text-align: left;
+      font-style: normal; }
+
+@media (max-width: 540px) {
+  #S0 .titulo h1 {
+    font-size: 12vw; }
+  #S0 .titulo h2 {
+    font-size: 6vw; }
+  #S0 .titulo p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 4.5vw; } }
+
+#S1 .containerPrueba {
+  background-color: white; }
+  #S1 .containerPrueba p {
+    color: yellow; }
+
+.video-background {
+  width: 100vw;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  position: relative; }
+
+.video-background video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100vw;
+  height: 120%;
+  right: 0; }
+
+@media (max-width: 360px) and (max-height: 740px) {
+  .video-background {
+    height: 740px; } }
+
+.contenedorN {
+  margin: 0;
+  padding: 0;
+  height: 80vh;
+  width: 100%; }

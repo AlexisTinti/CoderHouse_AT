@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+        <title>Pagina de Contacto - Edicion para todos</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../CSS/estilo_Nuevo.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+
+      <!-- Header de la página, acá iria el logo, título y links-->
+    
+  <body class="body">
+    <header class="headerFijo">
+          <nav class="nav">
+              <div class="logo"> Edicion Para Todos </div>
+              <input type="checkbox" id="click">
+                  <label for="click" class="menu-btn">
+                      <i class="fas fa-bars"></i>
+                  </label>
+              <ul>
+                  <li><a class="active" href="../Index.html">Home</a></li>
+                  <li><a href="../Assets/Cursos.html">Cursos</a></li>
+                  <li><a href="../Assets/Tutores.html">Tutores</a></li>
+                  <li><a href="../Assets/Contacto.html">Contacto</a></li>
+                  <li><a href="../Assets/Reels.html"> Reels</a></li>
+              </ul>
+          </nav>
+      </header>
+
+            <!-- Main de la página, acá iria el texto, videos e imagenes-->
+
+            <main class="main">
+                <meta name="keywords" content="Curso de edicion, edicion para todos, contacto, soporte tecnico, inscripcion">
+                <div class="container" style="margin-top:30px">
+                    <meta name="description" content="Pagina sobre nosotros y fomulario de contacto>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h2> Sobre Nosotros </h2>
+                            <br>
+                        </div>
+                        <div class="col-sm-6">
+                            <img  src="../Imagenes/archivos-word-autonomos-810x540.jpeg" class="img-fluid">
+                            <br>
+                        </div>
+                        <div class="col-sm-6">
+                            <br>
+                            <p> Edición para Todos es una página que busca fomentar, instruir y acompañar a todos los jóvenes profesionales que estan ingresando, o buscan ingresar, en el área de la Edición de contenidos Audiovisuales</p>
+                            <p> Contamos con un sistema de enseñanza online donde podrás encontrar diversos tutoriales, cursos, tips y notas de nuestros tutores y editores.</p>
+                            <p> Hoy en día con la creciente industria audiovisual fomenatada por grandes cadenas de contendio de streaming (Netflix, Amazon, Youtube, etc) las posibilidades laborales para los editores son cada vez más amplias. En esta página podrás conocer y aprender sobre que programas son los más utlilzados, que se busca dentro del medio Audiovisual y cuales son las posibilidades de crecimiento en este rubro.</p>
+                            <br>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="textoAlineado">
+                                <br>
+                                <h4>¿Necesitas saber más?</h4> 
+                                <h5>Envianos tus preguntas con el siguiente formulario y las contestaremos lo antes posible</h5>
+                                
+                            </div> 
+                            <meta name="description" content="Formulario de contacto Edicion para Todos - Home">
+                        <div class="conatainer mt-3 text-center">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                                Formulario de Contacto
+                            </button>
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+                        <div class="modal fade" id="myModal"> 
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+                                        <h4 class="modal-title"> Formulario de contacto </h4>
+                                        <button type="button" class="close" data-dismiss="modal">x</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <fieldset>
+                                                <label for="nombreUsuario"> 
+                                                    Ingrese su Nombre &nbsp;
+                                                </label>
+                                                <input type="text" placeholder="Su nombre va aquí" id="nombreUsuario">
+                                                    <br><br>
+                                                <label for="mailUsuario">
+                                                    Ingrese su Mail &nbsp;
+                                                </label>
+                                                <input type="email" placeholder="Aqui va su mail" id="mailUsuario">
+                                                    <br><br>
+                                                    Seleccione sobre que servicio es su consulta &nbsp;
+                                                <select name="serviciosConsulta" id="">
+                                                    <option value="1"> General </option>
+                                                    <option value="2"> Resolve Davinchi </option>
+                                                    <option value="3"> Adobe Premier </option>
+                                                    <option value="4"> After Effects </option>
+                                                </select>
+                                                    <br><br>
+                                                    Ingrese su consulta: &nbsp;<br>
+                                                <label for="Box"></label>
+                                                <textarea name="" id="" cols="" rows="" id="Box" ></textarea>
+                                                    <br><br>            
+                                                    ¿Sos humano? 
+                                                <input type="checkbox">
+                                            </fieldset>
+                                        </form>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-success" data-dismiss="modal"> Enviar </button>
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal"> Cancelar </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </main>
+
+            <!-- Footer de la página-->
+            
+            <footer class="footer">
+                <div>
+                    <p>Proyecto Final v2 - Alexis Tinti</p>
+                </div>
+            </footer>
+
+    </body>
+</html>
