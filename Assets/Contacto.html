@@ -41,101 +41,95 @@
                             <div class="col-sm-12" style="padding: 0;">
                                 <div class="contImagen">
                                     <img class="img img" src="../Imagenes/paperwhitepng.png"  height="100%">
-                                    <h2 class="contTexto"> Contacto </h2>
+                                    <h2 class="contTexto">  Contactanos  </h2>
                                 </div>
                             </div>
-                            <div class="col-sm-6" style=" padding-top: 5%;">
-                                
-                                <img  src="../Imagenes/archivos-word-autonomos-810x540.jpeg" class="img-fluid">
-                                
-                            </div>
-                            <div class="col-sm-6" style="padding-top: 3%;">
-                                <div class="textoSectores">
-                                    
-                                    <p> Edición para Todos es una página que busca fomentar, instruir y acompañar a todos los jóvenes profesionales que estan ingresando, o buscan ingresar, en el área de la Edición de contenidos Audiovisuales</p>
-                                    <p> Contamos con un sistema de enseñanza online donde podrás encontrar diversos tutoriales, cursos, tips y notas de nuestros tutores y editores.</p>
-                                </div>
-                            </div>
-                            <div class="col-sm-12">
-                                <div class="textoSectores">
-                                    <p> Hoy en día con la creciente industria audiovisual fomenatada por grandes cadenas de contendio de streaming (Netflix, Amazon, Youtube, etc) las posibilidades laborales para los editores son cada vez más amplias. En esta página podrás conocer y aprender sobre que programas son los más utlilzados, que se busca dentro del medio Audiovisual y cuales son las posibilidades de crecimiento en este rubro.</p>                                  
-                                </div>
-                            </div>
-                            <div class="col-sm-12">
-                                <div class="textoSectores" style="padding-top: 5%;">
-                                    
-                                    <h3>¿Necesitas saber más?</h3> 
-                                    <p>Envianos tus preguntas con el siguiente formulario y las contestaremos lo antes posible</p>
-                                    
-                                </div> 
-                                <meta name="description" content="Formulario de contacto Edicion para Todos - Home">
-                                <div class="conatainer mt-3 text-center">
-                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-                                        Formulario de Contacto
-                                    </button>
-                                </div>
-                                <br>
-                                <br>
-                            </div>
-                            <div class="modal fade" id="myModal"> 
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-
-                                        <div class="modal-header">
-                                            <h4 class="modal-title"> Formulario de contacto </h4>
-                                            <button type="button" class="close" data-dismiss="modal">x</button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <form action="">
-                                                <fieldset>
-                                                    <label for="nombreUsuario"> 
-                                                        Ingrese su Nombre &nbsp;
-                                                    </label>
-                                                    <input type="text" placeholder="Su nombre va aquí" id="nombreUsuario">
-                                                        <br><br>
-                                                    <label for="mailUsuario">
-                                                        Ingrese su Mail &nbsp;
-                                                    </label>
-                                                    <input type="email" placeholder="Aqui va su mail" id="mailUsuario">
-                                                        <br><br>
-                                                        Seleccione sobre que servicio es su consulta &nbsp;
-                                                    <select name="serviciosConsulta" id="">
-                                                        <option value="1"> General </option>
-                                                        <option value="2"> Resolve Davinchi </option>
-                                                        <option value="3"> Adobe Premier </option>
-                                                        <option value="4"> After Effects </option>
-                                                    </select>
-                                                        <br><br>
-                                                        Ingrese su consulta: &nbsp;<br>
-                                                    <label for="Box"></label>
-                                                    <textarea name="" id="" cols="" rows="" id="Box" ></textarea>
-                                                        <br><br>            
-    
-                                                </fieldset>
-                                            </form>
-                                        </div>
-
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-success" data-dismiss="modal"> Enviar </button>
-                                            <button type="button" class="btn btn-danger" data-dismiss="modal"> Cancelar </button>
-                                        </div>
+                        </div>
+                    </div>
+                    <div class="sectorContacto"> 
+                        <div class="container" style="padding-bottom: 1px; padding-top: 1px;">
+                            <div id="sectorFormulario">
+                                <div class="row">
+                                    <div class="col-12">       
+                                        <form action="#" method="post" id="formulario" style="padding-top: 0; padding-bottom: 0;">
+                                            <div class="nombre">
+                                                <label for="nombre"></label>
+                                                <input type="text" placeholder="Mi Nombre" name="nombre" id="input_nombre" required>
+                                            </div>
+                                            <div class="email">
+                                                <label for="email"></label>
+                                                <input type="email" placeholder="Mi e-mail es" name="email" id="input_mail" required>
+                                            </div>
+                                            <div class="telefono">
+                                                <label for="nombre"></label>
+                                                <input type="text" placeholder="Mi telefono es" name="telefono" id="input_telefono" required>
+                                            </div>
+                                            <div class="cursos">
+                                                <label for="cursos"></label>
+                                                <select placeholder="Elija su curso" name="cursos" id="input_cursos" required>
+                                                    <option disabled hidden selected>Elija su curso</option>
+                                                    <option>Quiero aprender Adobe Premier</option>
+                                                    <option>Quiero aprender After Effects</option>
+                                                    <option>Quiero aprender Davinchi Resolve</option>
+                                                </select>
+                                            </div>
+                                            <div class="mensaje">
+                                                <label for="mensaje"></label>
+                                                <textarea name="mensaje" placeholder="¡Me gustaría conocer los precios y horarios de cursada!" id="mensaje_input" cols="30" rows="5" required></textarea>
+                                            </div>
+                                            <div class="enviar">
+                                                <input type="enviar" value="Enviar" id="form_button" />
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>   
-            </main>
-
-            <!-- Footer de la página-->
-            
-        <div class="footer">
-            <div class="row" style="margin:0">
-                    <div class="col-sm-12">
-                        <div class="footer-copyright text-center py-3">© Edición Para Todos - v4 - Footer en progreso
-                   </div>
                 </div>
-            </div>
-        </div>
+
+                <footer class="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6">
+                                <hr>
+                                <h6>NOSOTROS</h6>
+                                <p class="text-justify"> <i>Edición Para Todos </i> es una página diseñada para la tutoría y
+                                    desarrollo de futuros editores de video. Puedes encontrar información extra en la pestaña
+                                    <i>Contacto</i> o comunicarte con nosotros en cualquiera de los siguientes canales
+                                </p>
+                            </div>
+                            <div class="col-xs-6 col-md-3">
+                                <h6>CONTACTO</h6>
+                                <ul class="footerContacto">
+                                    <li>+54 011 38622186</li>
+                                    <li>Edicionparatodos@gmail.com</a></li>
+                                    <li>San Nicolas 2022 - 4A</li>
+                                    <li>Capital Federal, Buenos Aires</li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-6 col-md-3">
+                                <h6>Links Rapidos</h6>
+                                <ul class="footerLinks">
+                                    <li><a href="../Index.html">Home</a></li>
+                                    <li><a href="./Cursos.html">Cursos</a></li>
+                                    <li><a href="./Tutores.html">Tutores</a></li>
+                                    <li><a href="./Contacto.html">Contacto</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-sm-6 col-xs-12">
+                                <p class="copyright">Copyright &copy; 2020 All Rights Reserved by
+                                    <a href="#">Alexis Tinti</a>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </main>
     </body>
 </html>
