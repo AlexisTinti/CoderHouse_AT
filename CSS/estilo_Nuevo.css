@@ -282,6 +282,9 @@ input[type="checkbox"] {
   line-height: 11rem;
   font-family: 'Pacifico'; }
 
+.contenedor-texto__sobreImagen--index {
+  font-size: 5vh; }
+
 .contenedor-texto__sobreImagen--cabecera {
   color: black;
   visibility: inherit;
@@ -455,6 +458,8 @@ input[type="checkbox"] {
     font-size: 2rem; }
   .contenedor-texto__sobreImagen {
     font-size: 6rem; }
+  .contenedor-texto__sobreImagen--index {
+    font-size: 3rem; }
   .textoSectores {
     padding-top: 2%; }
     .textoSectores p {
